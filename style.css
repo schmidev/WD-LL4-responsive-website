@@ -1,0 +1,108 @@
+/* ...existing code... */
+
+body {
+  /* Set the background color to a soft purple */
+  background-color: #b87fe1;
+}
+
+/* Hero section styles */
+.hero {
+  /* Placeholder background image using a light gray color */
+  background-color: #d6b823;
+  /* Add some space inside the hero section */
+  padding: 40px 20px;
+  /* Center the text */
+  text-align: center;
+  /* Add some space below the hero section */
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+}
+
+.hero h1 {
+  /* Make the headline bigger */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  /* Make the subtext a bit larger */
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Card section styles */
+.card-section {
+  /* Add some space around the card section */
+  padding: 20px 10px;
+}
+
+.card {
+  /* Light background for each card */
+  background-color: #d6b823;
+  /* Add a border with rounded corners */
+  border: 1px solid #0c0c0c;
+  border-radius: 8px;
+  /* Add space inside each card */
+  padding: 16px;
+  /* Add space below each card */
+  margin-bottom: 16px;
+  /* Simple shadow for effect */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  /* Make card titles stand out */
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.card p {
+  /* Slightly larger text for card content */
+  font-size: 1em;
+  color: #444;
+}
+
+.card img {
+  /* Make images fit the card width */
+  width: 100%;
+  /* Keep image corners rounded like the card */
+  border-radius: 8px 8px 0 0;
+  /* Add some space below the image */
+  margin-bottom: 12px;
+  /* Prevent images from being too tall */
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* Make cards align horizontally on desktop screens */
+@media (min-width: 700px) {
+  .card-section {
+    /* Use flexbox to arrange cards in a row */
+    display: flex;
+    gap: 16px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  .card {
+    /* Make all cards the same width */
+    flex: 1 1 200px;
+    margin-bottom: 0; /* Remove bottom margin for horizontal layout */
+    max-width: 300px; /* Optional: limit card width */
+  }
+}
+
+/* Remove bullet points and add simple styling for navigation */
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Arrange links in a row */
+  gap: 16px; /* Space between links */
+}
+
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Sets link color */
+  font-weight: bold;
+}
+
+/* ...existing code... */
